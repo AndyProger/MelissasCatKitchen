@@ -2,17 +2,16 @@ using UnityEngine;
 
 public class PlayerAnimator : MonoBehaviour
 {
-    private const string IS_WALKNIG = "IsWalking";
-    
+    private static readonly int IsWalking = Animator.StringToHash("IsWalking");
+
     [SerializeField] private Animator _animator;
-    [SerializeField] private Player _player;
 
     private bool _isWalking;
 
     private void Start()
     {
-        _player.OnWalking += () => SetWalkingMode(true);
-        _player.OnStopWalking += () => SetWalkingMode(false);
+        Player.Instance.OnWalking += (_, _) => SetWalkingMode(true);
+        Player.Instance.OnStopWalking += (_, _) => SetWalkingMode(false);
     }
 
     private void SetWalkingMode(bool isWalking)
@@ -21,6 +20,6 @@ public class PlayerAnimator : MonoBehaviour
             return;
         
         _isWalking = isWalking;
-        _animator.SetBool(IS_WALKNIG, isWalking);
+        _animator.SetBool(IsWalking, isWalking);
     }
 }
