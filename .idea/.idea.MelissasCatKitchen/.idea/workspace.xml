@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9ffc71c-b4cb-415e-a65a-c5942d163731" name="Changes" comment="added empty and container counter logic and some animation logic for them">
+    <list default="true" id="d9ffc71c-b4cb-415e-a65a-c5942d163731" name="Changes" comment="fix container animation and added more kinds of container food">
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/ContainerCounterBread.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/ContainerCounterBread.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/ContainerCounterCabbage.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/ContainerCounterCabbage.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/ContainerCounterCheese.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/ContainerCounterCheese.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/ContainerCounterMeatPatty.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/ContainerCounterMeatPatty.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/ContainerCounterTomato.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/ContainerCounterTomato.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/KitchenObjects/Bread.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/KitchenObjects/Bread.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/KitchenObjects/Cabbage.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/KitchenObjects/Cabbage.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/KitchenObjects/MeatPattyUncooked.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/KitchenObjects/MeatPattyUncooked.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/KitchenObjectscriptableObjects/Bread.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/KitchenObjectscriptableObjects/Bread.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/KitchenObjectscriptableObjects/Cabbage.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/KitchenObjectscriptableObjects/Cabbage.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/KitchenObjectscriptableObjects/MeatPattyUncooked.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/KitchenObjectscriptableObjects/MeatPattyUncooked.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MelissasCatKitchen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MelissasCatKitchen/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Counters/ContainerCounter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/ContainerCounter.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
@@ -14,6 +36,12 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/IKitchenObjectParent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/IKitchenObjectParent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/KitchenObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/KitchenObject.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/PrefabsVisuals/KitchenObjectsVisuals/Bread_Visual.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/PrefabsVisuals/KitchenObjectsVisuals/Bread_Visual.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/PrefabsVisuals/KitchenObjectsVisuals/Cabbage_Visual.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/PrefabsVisuals/KitchenObjectsVisuals/Cabbage_Visual.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/PrefabsVisuals/KitchenObjectsVisuals/MeatPattyUncooked_Visual.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/PrefabsVisuals/KitchenObjectsVisuals/MeatPattyUncooked_Visual.prefab.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +134,7 @@
       <workItem from="1679932218242" duration="6467000" />
       <workItem from="1680020579501" duration="6720000" />
       <workItem from="1680108903418" duration="5138000" />
-      <workItem from="1680174777995" duration="6380000" />
+      <workItem from="1680174777995" duration="7033000" />
     </task>
     <task id="LOCAL-00002" summary="added some post processing">
       <created>1679423535818</created>
@@ -136,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680179903450</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix container animation and added more kinds of container food">
+      <created>1680182363164</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680182363164</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +198,7 @@
     <MESSAGE value="added new input system, movement, and simple animation" />
     <MESSAGE value="some refactoring and selection effect added" />
     <MESSAGE value="added empty and container counter logic and some animation logic for them" />
-    <option name="LAST_COMMIT_MESSAGE" value="added empty and container counter logic and some animation logic for them" />
+    <MESSAGE value="fix container animation and added more kinds of container food" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix container animation and added more kinds of container food" />
   </component>
 </project>
