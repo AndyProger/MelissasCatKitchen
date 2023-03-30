@@ -94,7 +94,7 @@ public class Player : MonoBehaviour, IKitchenObjectParent
         if (!canMove)
         {
             var moveDirectionX = new Vector3(_currentDirection.x, 0, 0).normalized;
-            canMove = CanMovePlayer(moveDirectionX);
+            canMove = moveDirectionX.x != 0 && CanMovePlayer(moveDirectionX);
             if (canMove)
             {
                 _currentDirection = moveDirectionX;
@@ -102,7 +102,7 @@ public class Player : MonoBehaviour, IKitchenObjectParent
             else
             {
                 var moveDirectionZ = new Vector3(0, 0, _currentDirection.z).normalized;
-                canMove = CanMovePlayer(moveDirectionZ);
+                canMove = moveDirectionX.z != 0 && CanMovePlayer(moveDirectionZ);
 
                 if (canMove)
                     _currentDirection = moveDirectionZ;

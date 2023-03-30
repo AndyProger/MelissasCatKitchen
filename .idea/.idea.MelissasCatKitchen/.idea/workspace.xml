@@ -1,47 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9ffc71c-b4cb-415e-a65a-c5942d163731" name="Changes" comment="fix container animation and added more kinds of container food">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/ContainerCounterBread.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/ContainerCounterBread.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/ContainerCounterCabbage.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/ContainerCounterCabbage.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/ContainerCounterCheese.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/ContainerCounterCheese.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/ContainerCounterMeatPatty.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/ContainerCounterMeatPatty.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/ContainerCounterTomato.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/ContainerCounterTomato.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/KitchenObjects/Bread.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/KitchenObjects/Bread.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/KitchenObjects/Cabbage.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/KitchenObjects/Cabbage.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/KitchenObjects/MeatPattyUncooked.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/KitchenObjects/MeatPattyUncooked.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/KitchenObjectscriptableObjects/Bread.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/KitchenObjectscriptableObjects/Bread.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/KitchenObjectscriptableObjects/Cabbage.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/KitchenObjectscriptableObjects/Cabbage.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/KitchenObjectscriptableObjects/MeatPattyUncooked.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/KitchenObjectscriptableObjects/MeatPattyUncooked.asset.meta" afterDir="false" />
+    <list default="true" id="d9ffc71c-b4cb-415e-a65a-c5942d163731" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MelissasCatKitchen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MelissasCatKitchen/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Counters/ContainerCounter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/ContainerCounter.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/Animations/ContainerCounterAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/Animations/ContainerCounterAnimation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/ClearCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/ClearCounter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/ContainerCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/ContainerCounter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/Counter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/Counter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameEventArgs/OnCounterInteractionArgs.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameEventArgs/OnCounterInteractionArgs.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/IKitchenObjectParent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/IKitchenObjectParent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/KitchenObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/KitchenObject.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/PrefabsVisuals/KitchenObjectsVisuals/Bread_Visual.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/PrefabsVisuals/KitchenObjectsVisuals/Bread_Visual.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/PrefabsVisuals/KitchenObjectsVisuals/Cabbage_Visual.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/PrefabsVisuals/KitchenObjectsVisuals/Cabbage_Visual.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/PrefabsVisuals/KitchenObjectsVisuals/MeatPattyUncooked_Visual.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/PrefabsVisuals/KitchenObjectsVisuals/MeatPattyUncooked_Visual.prefab.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,12 +19,18 @@
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/2ca7bdfed5874f329433256f548490641a000/e0/921572ed/RaycastHit.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/4014a86cbefb4944b2b6c9211c8fd2fc159a00/14/3397f977/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PlayerInputActions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CounterScripts/Animations/ContainerCounterAnimation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CounterScripts/ClearCounter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CounterScripts/ContainerCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CounterScripts/Counter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CounterScripts/SelectedCounterVisual.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/KitchenObject.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
