@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9ffc71c-b4cb-415e-a65a-c5942d163731" name="Changes" comment="">
+    <list default="true" id="d9ffc71c-b4cb-415e-a65a-c5942d163731" name="Changes" comment="movement mini fix">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MelissasCatKitchen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MelissasCatKitchen/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerInputActions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputActions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerInputActions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputActions.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Counters/BaseCounter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/BaseCounter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/KitchenObjects/Cabbage.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/KitchenObjects/Cabbage.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/ContainerCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/ContainerCounter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/Counter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/Counter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/KitchenObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/KitchenObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/KitchenObjectScriptableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/KitchenObjectSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/KitchenObjectScriptableObject.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/KitchenObjectSO.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/GameInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/GameInput.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/PrefabsVisuals/KitchenObjectsVisuals/TomatoSlices_Visual.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/PrefabsVisuals/KitchenObjectsVisuals/TomatoSlices_Visual.prefab.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,13 +37,23 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/2ca7bdfed5874f329433256f548490641a000/e0/921572ed/RaycastHit.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/4014a86cbefb4944b2b6c9211c8fd2fc159a00/14/3397f977/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/820418806247485ca814d3202155407f10fc00/ff/265f3b55/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PlayerInputActions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CounterScripts/Animations/ContainerCounterAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CounterScripts/ClearCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CounterScripts/ContainerCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CounterScripts/Counter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CounterScripts/CuttingCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CounterScripts/SelectedCounterVisual.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/KitchenObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CuttingRecipeSO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/KitchenObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/diplom/DiplomProject/MelissasCatKitchen/Assets/Scripts/PlayerScripts/Player.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.10/Runtime/External/LibTessDotNet/Dict.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.10/Runtime/External/LibTessDotNet/Tess.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.10/Runtime/RendererFeatures/DecalRendererFeature.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.10/Runtime/XR/XRPass.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.searcher@4.9.1/Samples~/Editor/SearcherExampleWindow.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -70,10 +93,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="12456">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="12456" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -139,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680182363164</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="movement mini fix">
+      <created>1680185153410</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680185153410</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +197,39 @@
     <MESSAGE value="some refactoring and selection effect added" />
     <MESSAGE value="added empty and container counter logic and some animation logic for them" />
     <MESSAGE value="fix container animation and added more kinds of container food" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix container animation and added more kinds of container food" />
+    <MESSAGE value="movement mini fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="movement mini fix" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/CounterScripts/CuttingCounter.cs</url>
+          <line>8</line>
+          <properties documentPath="D:\diplom\DiplomProject\MelissasCatKitchen\Assets\Scripts\CounterScripts\CuttingCounter.cs" initialLine="8" containingFunctionPresentation="method 'Interact'">
+            <startOffsets>
+              <option value="194" />
+            </startOffsets>
+            <endOffsets>
+              <option value="195" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/KitchenObject.cs</url>
+          <line>18</line>
+          <properties documentPath="D:\diplom\DiplomProject\MelissasCatKitchen\Assets\Scripts\KitchenObjectsScripts\KitchenObject.cs" initialLine="17" containingFunctionPresentation="method 'SetKitchenObjectParent'">
+            <startOffsets>
+              <option value="501" />
+            </startOffsets>
+            <endOffsets>
+              <option value="556" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

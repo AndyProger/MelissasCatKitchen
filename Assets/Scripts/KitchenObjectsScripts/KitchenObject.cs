@@ -1,12 +1,13 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class KitchenObject : MonoBehaviour
 {
-    [SerializeField] private KitchenObjectScriptableObject _kitchenObjectSO;
+    [SerializeField] private KitchenObjectSO _kitchenObjectSO;
 
     private IKitchenObjectParent _parent;
     
-    public KitchenObjectScriptableObject KitchenObjectSO => _kitchenObjectSO;
+    public KitchenObjectSO KitchenObjectSO => _kitchenObjectSO;
 
     public void SetKitchenObjectParent(IKitchenObjectParent parent)
     {
@@ -15,7 +16,7 @@ public class KitchenObject : MonoBehaviour
         
         _parent = parent;
         if (parent.HasKitchenObject())
-            Debug.LogError("Counter already has a kKitchenObject!");
+            Debug.LogError("Counter already has a KitchenObject!");
         
         parent.CurrentKitchenObject = this;
         NormalizePosition(parent);
@@ -28,5 +29,16 @@ public class KitchenObject : MonoBehaviour
     {
         transform.parent = clearCounter.CounterTopPoint;
         transform.localPosition = Vector3.zero;
+    }
+
+    public void DestroySelf() => 
+        Destroy(gameObject);
+
+    public static KitchenObject SpawnKitchenObject(KitchenObjectSO obj, IKitchenObjectParent parent)
+    {
+        var kitchenObjectTransform = Instantiate(obj.Prefab);
+        var  kitchenObject = kitchenObjectTransform.GetComponent<KitchenObject>();
+        kitchenObject.SetKitchenObjectParent(parent);
+        return kitchenObject;
     }
 }

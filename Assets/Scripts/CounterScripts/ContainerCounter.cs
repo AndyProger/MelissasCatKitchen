@@ -5,8 +5,7 @@ public class ContainerCounter : Counter
         if (player.HasKitchenObject())
             return;
         
-        var kitchenObjectTransform = Instantiate(_kitchenObjectSO.Prefab);
-        kitchenObjectTransform.GetComponent<KitchenObject>().SetKitchenObjectParent(player);
+        KitchenObject.SpawnKitchenObject(_kitchenObjectSO, player);
         base.Interact(player);
     }
 }

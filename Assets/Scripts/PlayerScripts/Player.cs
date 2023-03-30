@@ -37,6 +37,23 @@ public class Player : MonoBehaviour, IKitchenObjectParent
     private void Start()
     {
         _gameInput.OnInteractAction += OnInteractAction;
+        _gameInput.OnInteractAlternateAction += OnInteractAlternateAction;
+    }
+    
+    private void OnInteractAction(object obj, EventArgs args)
+    {
+        if (_selectedCounter == null) 
+            return;
+        
+        _selectedCounter.Interact(this);
+    }
+    
+    private void OnInteractAlternateAction(object obj, EventArgs args)
+    {
+        if (_selectedCounter == null) 
+            return;
+        
+        _selectedCounter.InteractAlternate(this);
     }
 
     private void Update()
@@ -46,14 +63,6 @@ public class Player : MonoBehaviour, IKitchenObjectParent
         InvokeEvents();
     }
 
-    private void OnInteractAction(object obj, EventArgs args)
-    {
-        if (_selectedCounter == null) 
-            return;
-        
-        _selectedCounter.Interact(this);
-    }
-    
     private void HandleInteract()
     {
         var inputVector = _gameInput.GetMovementNormalizedVector();

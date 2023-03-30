@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class Counter : MonoBehaviour, IKitchenObjectParent
 {
-    [SerializeField] protected KitchenObjectScriptableObject _kitchenObjectSO;
+    [SerializeField] protected KitchenObjectSO _kitchenObjectSO;
     [SerializeField] private Transform _counterTopPoint;
     
     public event EventHandler OnCounterInteraction;
@@ -16,6 +16,8 @@ public abstract class Counter : MonoBehaviour, IKitchenObjectParent
     {
         OnCounterInteraction?.Invoke(this, EventArgs.Empty);
     }
+    
+    public virtual void InteractAlternate(Player player) { }
     
     public void ClearKitchenObject() => 
         CurrentKitchenObject = null;
