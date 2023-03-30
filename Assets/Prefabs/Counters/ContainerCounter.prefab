@@ -474,6 +474,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4841286013473667211, guid: 9a9137fa2b035d34e881701d2c178192,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841286013473667211, guid: 9a9137fa2b035d34e881701d2c178192,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8926576705362139715, guid: 9a9137fa2b035d34e881701d2c178192,
+        type: 3}
+      propertyPath: _animatedCounter
+      value: 
+      objectReference: {fileID: 5235422481445394821}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a9137fa2b035d34e881701d2c178192, type: 3}
 --- !u!1001 &6249319345404634796
@@ -569,7 +584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e57451a5baa5b9147b1c0d3fe5b9e960, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _kitchenObjectSO: {fileID: 11400000, guid: 52b330ccd9395e24f8b1486fb456559f, type: 2}
+  _kitchenObjectSO: {fileID: 0}
   _counterTopPoint: {fileID: 4833601193575531436}
 --- !u!4 &4985465042355953069 stripped
 Transform:

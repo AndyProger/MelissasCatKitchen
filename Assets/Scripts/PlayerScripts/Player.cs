@@ -10,13 +10,12 @@ public class Player : MonoBehaviour, IKitchenObjectParent
     
     public static Player Instance { get; private set; }
     public Transform CounterTopPoint => _holdPoint;
-    public KitchenObject KitchenObject { get; set; }
+    public KitchenObject CurrentKitchenObject { get; set; }
 
     public event EventHandler OnWalking;
     public event EventHandler OnStopWalking;
     public event EventHandler<OnSelectedCounterEventArgs> OnSelectedCounterChanged;
-    public event EventHandler<OnCounterInteractionArgs> OnCounterInteraction;
-    
+
     [SerializeField] private float _moveSpeed = 7f;
     [SerializeField] private float _rotateSpeed = 10f;
     [SerializeField] private GameInput _gameInput;
@@ -53,7 +52,6 @@ public class Player : MonoBehaviour, IKitchenObjectParent
             return;
         
         _selectedCounter.Interact(this);
-        OnCounterInteraction?.Invoke(this, new OnCounterInteractionArgs(_selectedCounter));
     }
     
     private void HandleInteract()
@@ -138,8 +136,8 @@ public class Player : MonoBehaviour, IKitchenObjectParent
     }
     
     public void ClearKitchenObject() => 
-        KitchenObject = null;
+        CurrentKitchenObject = null;
 
     public bool HasKitchenObject() => 
-        KitchenObject != null;
+        CurrentKitchenObject != null;
 }
