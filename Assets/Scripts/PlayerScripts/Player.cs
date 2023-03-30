@@ -2,26 +2,30 @@ using System;
 using GameEventArgs;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, IKitchenObjectParent
 {
     private const float PlayerRadius = 0.7f;
     private const float PlayerHeight = 2f;
     private const float InteractDistance = 2f;
     
     public static Player Instance { get; private set; }
+    public Transform CounterTopPoint => _holdPoint;
+    public KitchenObject KitchenObject { get; set; }
 
     public event EventHandler OnWalking;
     public event EventHandler OnStopWalking;
     public event EventHandler<OnSelectedCounterEventArgs> OnSelectedCounterChanged;
+    public event EventHandler<OnCounterInteractionArgs> OnCounterInteraction;
     
     [SerializeField] private float _moveSpeed = 7f;
-    [SerializeField] private float _rotateSpeed = 12f;
+    [SerializeField] private float _rotateSpeed = 10f;
     [SerializeField] private GameInput _gameInput;
     [SerializeField] private LayerMask _countersLayerMask;
+    [SerializeField] private Transform _holdPoint;
 
     private Vector3 _currentDirection;
     private Vector3 _lastDirection;
-    private ClearCounter _selectedCounter;
+    private Counter _selectedCounter;
 
     private void Awake()
     {
@@ -45,8 +49,11 @@ public class Player : MonoBehaviour
 
     private void OnInteractAction(object obj, EventArgs args)
     {
-        if (_selectedCounter != null)
-            _selectedCounter.Interact();
+        if (_selectedCounter == null) 
+            return;
+        
+        _selectedCounter.Interact(this);
+        OnCounterInteraction?.Invoke(this, new OnCounterInteractionArgs(_selectedCounter));
     }
     
     private void HandleInteract()
@@ -58,10 +65,10 @@ public class Player : MonoBehaviour
 
         if (Physics.Raycast(transform.position, _lastDirection, out var raycastHit, InteractDistance, _countersLayerMask))
         {
-            if (raycastHit.transform.TryGetComponent(out ClearCounter clearCounter))
+            if (raycastHit.transform.TryGetComponent(out Counter counter))
             {
-                if (clearCounter != _selectedCounter)
-                    SetSelectedCounter(clearCounter);
+                if (counter != _selectedCounter)
+                    SetSelectedCounter(counter);
             }
             else
             {
@@ -74,7 +81,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void SetSelectedCounter(ClearCounter selectedCounter)
+    private void SetSelectedCounter(Counter selectedCounter)
     {
         _selectedCounter = selectedCounter;
         OnSelectedCounterChanged?.Invoke(this, new OnSelectedCounterEventArgs(_selectedCounter));
@@ -129,4 +136,10 @@ public class Player : MonoBehaviour
         else
             OnStopWalking?.Invoke(this, EventArgs.Empty);
     }
+    
+    public void ClearKitchenObject() => 
+        KitchenObject = null;
+
+    public bool HasKitchenObject() => 
+        KitchenObject != null;
 }

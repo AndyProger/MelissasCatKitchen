@@ -4,9 +4,9 @@ namespace GameEventArgs
 {
     public class OnSelectedCounterEventArgs : EventArgs
     {
-        public ClearCounter SelectedCounter;
+        public Counter SelectedCounter;
 
-        public OnSelectedCounterEventArgs(ClearCounter counter) => 
+        public OnSelectedCounterEventArgs(Counter counter) => 
             SelectedCounter = counter;
     }
 }
