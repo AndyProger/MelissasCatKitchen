@@ -1,9 +1,15 @@
+using System;
 using System.Linq;
+using GameEventArgs;
 using UnityEngine;
 
 public class CuttingCounter : Counter
 {
     [SerializeField] private CuttingRecipeSO[] _recipes;
+
+    private int _cuttingProgress;
+
+    public event EventHandler<CuttingProgressArgs> OnCuttingProgress;
     
     public override void Interact(Player player)
     {
@@ -12,11 +18,16 @@ public class CuttingCounter : Counter
             && HasRecipesForKitchenObject(player.CurrentKitchenObject))
         {
             player.CurrentKitchenObject.SetKitchenObjectParent(this);
+            _cuttingProgress = 0;
+            OnCounterInteractionEvent(InteractionType.Set);
             return;
         }
         
         if (HasKitchenObject() && !player.HasKitchenObject())
+        {
             CurrentKitchenObject.SetKitchenObjectParent(player);
+            OnCounterInteractionEvent(InteractionType.Get);
+        }
     }
 
     public override void InteractAlternate(Player player)
@@ -26,6 +37,13 @@ public class CuttingCounter : Counter
             var slicedObject = GetSlicedKitchenObject();
             if (slicedObject is null)
                 return;
+
+            _cuttingProgress++;
+            
+            var countNeed = GetCuttingCountNeed();
+            OnCuttingProgress?.Invoke(this, new CuttingProgressArgs(_cuttingProgress, countNeed));
+            if (_cuttingProgress != countNeed)
+                return;
             
             CurrentKitchenObject.DestroySelf();
             ClearKitchenObject();
@@ -33,9 +51,12 @@ public class CuttingCounter : Counter
         }
     }
     
-    private bool HasRecipesForKitchenObject(KitchenObject CurrentKitchenObject) => 
-        _recipes.Any(x => x.Before == CurrentKitchenObject.KitchenObjectSO);
+    private bool HasRecipesForKitchenObject(KitchenObject currentKitchenObject) => 
+        _recipes.Any(x => x.Before == currentKitchenObject.KitchenObjectSO);
 
     private KitchenObjectSO GetSlicedKitchenObject() => 
         _recipes.FirstOrDefault(x => x.Before == CurrentKitchenObject.KitchenObjectSO)?.After;
+    
+    private int GetCuttingCountNeed() => 
+        _recipes.First(x => x.Before == CurrentKitchenObject.KitchenObjectSO).CuttingCountNeed;
 }

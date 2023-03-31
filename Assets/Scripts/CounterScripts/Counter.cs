@@ -7,15 +7,15 @@ public abstract class Counter : MonoBehaviour, IKitchenObjectParent
     [SerializeField] protected KitchenObjectSO _kitchenObjectSO;
     [SerializeField] private Transform _counterTopPoint;
     
-    public event EventHandler OnCounterInteraction;
+    public event EventHandler<CounterInteractionArgs> OnCounterInteraction;
     
     public Transform CounterTopPoint => _counterTopPoint;
     public KitchenObject CurrentKitchenObject { get; set; }
 
-    public virtual void Interact(Player player)
-    {
-        OnCounterInteraction?.Invoke(this, EventArgs.Empty);
-    }
+    public virtual void Interact(Player player) { }
+
+    protected void OnCounterInteractionEvent(InteractionType type) => 
+        OnCounterInteraction?.Invoke(this, new CounterInteractionArgs(type));
     
     public virtual void InteractAlternate(Player player) { }
     

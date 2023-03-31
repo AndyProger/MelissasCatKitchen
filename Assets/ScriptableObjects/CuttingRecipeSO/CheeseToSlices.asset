@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: CheeseToSlices
   m_EditorClassIdentifier: 
   Before: {fileID: 11400000, guid: 7d3694d2382f2c84193cf85188fb3cfd, type: 2}
+  CuttingCountNeed: 3
   After: {fileID: 11400000, guid: 4db72975774a12243846019aa4955234, type: 2}

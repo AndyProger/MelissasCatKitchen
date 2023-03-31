@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: TomatoToSlices
   m_EditorClassIdentifier: 
   Before: {fileID: 11400000, guid: 52b330ccd9395e24f8b1486fb456559f, type: 2}
+  CuttingCountNeed: 5
   After: {fileID: 11400000, guid: d45291dbeecfd6a4aaee83a219385b4f, type: 2}

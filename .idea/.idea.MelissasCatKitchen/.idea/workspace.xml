@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9ffc71c-b4cb-415e-a65a-c5942d163731" name="Changes" comment="movement mini fix">
+    <list default="true" id="d9ffc71c-b4cb-415e-a65a-c5942d163731" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/BaseUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/BaseUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameEventArgs/CounterInteractionArgs.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameEventArgs/CounterInteractionArgs.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameEventArgs/CuttingProgressArgs.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameEventArgs/CuttingProgressArgs.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MelissasCatKitchen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MelissasCatKitchen/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerInputActions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputActions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerInputActions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputActions.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Counters/BaseCounter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/BaseCounter.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/KitchenObjects/Cabbage.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/KitchenObjects/Cabbage.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Counters/CuttingCounter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/CuttingCounter.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/CuttingRecipeSO/CabbageToSlices.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/CuttingRecipeSO/CabbageToSlices.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/CuttingRecipeSO/CheeseToSlices.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/CuttingRecipeSO/CheeseToSlices.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/CuttingRecipeSO/TomatoToSlices.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/CuttingRecipeSO/TomatoToSlices.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/ContainerCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/ContainerCounter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/Counter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/Counter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/KitchenObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/KitchenObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/KitchenObjectScriptableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/KitchenObjectSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/KitchenObjectScriptableObject.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/KitchenObjectSO.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/GameInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/GameInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/PrefabsVisuals/KitchenObjectsVisuals/TomatoSlices_Visual.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/PrefabsVisuals/KitchenObjectsVisuals/TomatoSlices_Visual.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/CuttingCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/CuttingCounter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CuttingRecipeSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/CuttingRecipeSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CuttingRecipeSO.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/CuttingRecipeSO.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,14 +43,17 @@
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/820418806247485ca814d3202155407f10fc00/ff/265f3b55/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PlayerInputActions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CounterScripts/Animations/ContainerCounterAnimation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CounterScripts/Animations/CuttingCounterAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CounterScripts/ClearCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CounterScripts/ContainerCounter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/diplom/DiplomProject/MelissasCatKitchen/Assets/Scripts/CounterScripts/ContainerCounter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/diplom/DiplomProject/MelissasCatKitchen/Assets/Scripts/CounterScripts/Counter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CounterScripts/Counter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CounterScripts/CuttingCounter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/diplom/DiplomProject/MelissasCatKitchen/Assets/Scripts/CounterScripts/CuttingCounter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CounterScripts/SelectedCounterVisual.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CuttingRecipeSO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/CuttingRecipeSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/KitchenObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/diplom/DiplomProject/MelissasCatKitchen/Assets/Scripts/PlayerScripts/Player.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.10/Runtime/External/LibTessDotNet/Dict.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.10/Runtime/External/LibTessDotNet/Tess.cs" root0="SKIP_HIGHLIGHTING" />
@@ -93,10 +99,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="12456">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="18932">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="12456" />
+      <option name="pid" value="18932" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -126,6 +132,7 @@
       <workItem from="1680020579501" duration="6720000" />
       <workItem from="1680108903418" duration="5138000" />
       <workItem from="1680174777995" duration="7033000" />
+      <workItem from="1680253176537" duration="7397000" />
     </task>
     <task id="LOCAL-00002" summary="added some post processing">
       <created>1679423535818</created>
@@ -169,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680185153410</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added cutting counter and recipe system for this one">
+      <created>1680189381907</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680189381907</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,24 +212,12 @@
     <MESSAGE value="added empty and container counter logic and some animation logic for them" />
     <MESSAGE value="fix container animation and added more kinds of container food" />
     <MESSAGE value="movement mini fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="movement mini fix" />
+    <MESSAGE value="added cutting counter and recipe system for this one" />
+    <option name="LAST_COMMIT_MESSAGE" value="added cutting counter and recipe system for this one" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/CounterScripts/CuttingCounter.cs</url>
-          <line>8</line>
-          <properties documentPath="D:\diplom\DiplomProject\MelissasCatKitchen\Assets\Scripts\CounterScripts\CuttingCounter.cs" initialLine="8" containingFunctionPresentation="method 'Interact'">
-            <startOffsets>
-              <option value="194" />
-            </startOffsets>
-            <endOffsets>
-              <option value="195" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/KitchenObject.cs</url>
           <line>18</line>
@@ -228,6 +230,58 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/CounterScripts/ProgressBarUI.cs</url>
+          <line>22</line>
+          <properties documentPath="D:\diplom\DiplomProject\MelissasCatKitchen\Assets\Scripts\CounterScripts\ProgressBarUI.cs" initialLine="20" containingFunctionPresentation="method 'OnCounterInteraction'">
+            <startOffsets>
+              <option value="699" />
+            </startOffsets>
+            <endOffsets>
+              <option value="700" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/CounterScripts/CuttingCounter.cs</url>
+          <line>21</line>
+          <properties documentPath="D:\diplom\DiplomProject\MelissasCatKitchen\Assets\Scripts\CounterScripts\CuttingCounter.cs" initialLine="21" containingFunctionPresentation="method 'Interact'">
+            <startOffsets>
+              <option value="610" />
+            </startOffsets>
+            <endOffsets>
+              <option value="657" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/CounterScripts/CuttingCounter.cs</url>
+          <line>28</line>
+          <properties documentPath="D:\diplom\DiplomProject\MelissasCatKitchen\Assets\Scripts\CounterScripts\CuttingCounter.cs" initialLine="28" containingFunctionPresentation="method 'Interact'">
+            <startOffsets>
+              <option value="846" />
+            </startOffsets>
+            <endOffsets>
+              <option value="893" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/CounterScripts/ProgressBarUI.cs</url>
+          <line>11</line>
+          <properties documentPath="D:\diplom\DiplomProject\MelissasCatKitchen\Assets\Scripts\CounterScripts\ProgressBarUI.cs" initialLine="11" containingFunctionPresentation="method 'Awake'">
+            <startOffsets>
+              <option value="260" />
+            </startOffsets>
+            <endOffsets>
+              <option value="261" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

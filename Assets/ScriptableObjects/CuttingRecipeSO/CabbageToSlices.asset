@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: CabbageToSlices
   m_EditorClassIdentifier: 
   Before: {fileID: 11400000, guid: 4f7c9fe44d223be4f972cccc0dc7e7c9, type: 2}
+  CuttingCountNeed: 6
   After: {fileID: 11400000, guid: 7cc132458a8908246bc6ec70a4f88402, type: 2}

@@ -1,3 +1,5 @@
+using GameEventArgs;
+
 public class ContainerCounter : Counter
 {
     public override void Interact(Player player)
@@ -6,6 +8,6 @@ public class ContainerCounter : Counter
             return;
         
         KitchenObject.SpawnKitchenObject(_kitchenObjectSO, player);
-        base.Interact(player);
+        OnCounterInteractionEvent(InteractionType.GetFromContainer);
     }
 }
