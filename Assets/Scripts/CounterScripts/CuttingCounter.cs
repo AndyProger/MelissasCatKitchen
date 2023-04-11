@@ -3,13 +3,13 @@ using System.Linq;
 using GameEventArgs;
 using UnityEngine;
 
-public class CuttingCounter : Counter
+public class CuttingCounter : Counter, IHasProgress
 {
     [SerializeField] private CuttingRecipeSO[] _recipes;
 
     private int _cuttingProgress;
 
-    public event EventHandler<CuttingProgressArgs> OnCuttingProgress;
+    public event EventHandler<ProgressEventArgs> OnProgress;
     
     public override void Interact(Player player)
     {
@@ -41,7 +41,7 @@ public class CuttingCounter : Counter
             _cuttingProgress++;
             
             var countNeed = GetCuttingCountNeed();
-            OnCuttingProgress?.Invoke(this, new CuttingProgressArgs(_cuttingProgress, countNeed));
+            OnProgress?.Invoke(this, new ProgressEventArgs(_cuttingProgress, countNeed));
             if (_cuttingProgress != countNeed)
                 return;
             

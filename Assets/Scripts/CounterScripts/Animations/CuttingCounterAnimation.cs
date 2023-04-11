@@ -10,8 +10,8 @@ public class CuttingCounterAnimation : MonoBehaviour
     [SerializeField] private CuttingCounter _animatedCounter;
 
     private void Start() => 
-        _animatedCounter.OnCuttingProgress += OnCounterInteraction;
+        _animatedCounter.OnProgress += OnCounterInteraction;
 
-    private void OnCounterInteraction(object obj, CuttingProgressArgs args) => 
+    private void OnCounterInteraction(object obj, ProgressEventArgs eventArgs) => 
         _animator.SetTrigger(Cut);
 }
