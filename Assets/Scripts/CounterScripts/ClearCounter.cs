@@ -7,8 +7,29 @@ public class ClearCounter : Counter, IKitchenObjectParent
             player.CurrentKitchenObject.SetKitchenObjectParent(this);
             return;
         }
+
+        if (!HasKitchenObject()) 
+            return;
         
-        if (HasKitchenObject() && !player.HasKitchenObject())
-            CurrentKitchenObject.SetKitchenObjectParent(player);
+        if (player.HasKitchenObject())
+        {
+            if (player.CurrentKitchenObject.TryGetPlate(out var plateKitchenObject))
+            {
+                if (plateKitchenObject.TryAddIngredient(CurrentKitchenObject.KitchenObjectSO))
+                    CurrentKitchenObject.DestroySelf();
+            }
+            else
+            {
+                if (CurrentKitchenObject.TryGetPlate(out plateKitchenObject))
+                {
+                    if (plateKitchenObject.TryAddIngredient(player.CurrentKitchenObject.KitchenObjectSO))
+                        player.CurrentKitchenObject.DestroySelf();
+                }
+            }
+            
+            return;
+        }
+            
+        CurrentKitchenObject.SetKitchenObjectParent(player);
     }
 }

@@ -87,15 +87,34 @@ public class StoveCounter : Counter, IHasProgress
             OnStoveCounterStateChanged?.Invoke(this, new StoveCounterStateChangedEventArgs(_state));
             _fryingTimer = 0.0f;
             return;
-        } 
-        
-        if (HasKitchenObject() && !player.HasKitchenObject())
-        {
-            CurrentKitchenObject.SetKitchenObjectParent(player);
-            _state = State.Idle;
-            OnStoveCounterStateChanged?.Invoke(this, new StoveCounterStateChangedEventArgs(_state));
-            OnProgress?.Invoke(this, new ProgressEventArgs(0, 0));
         }
+
+        if (!HasKitchenObject()) 
+            return;
+        
+        if (player.HasKitchenObject())
+        {
+            if (player.CurrentKitchenObject.TryGetPlate(out var plateKitchenObject))
+            {
+                if (plateKitchenObject.TryAddIngredient(CurrentKitchenObject.KitchenObjectSO))
+                {
+                    CurrentKitchenObject.DestroySelf();
+                    ResetState();
+                }
+            }
+                
+            return;   
+        }
+            
+        CurrentKitchenObject.SetKitchenObjectParent(player);
+        ResetState();
+    }
+
+    private void ResetState()
+    {
+        _state = State.Idle;
+        OnStoveCounterStateChanged?.Invoke(this, new StoveCounterStateChangedEventArgs(_state));
+        OnProgress?.Invoke(this, new ProgressEventArgs(0, 0));
     }
     
     private bool HasRecipesForKitchenObject(KitchenObject currentKitchenObject) => 

@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class KitchenObject : MonoBehaviour
@@ -43,5 +42,17 @@ public class KitchenObject : MonoBehaviour
         var  kitchenObject = kitchenObjectTransform.GetComponent<KitchenObject>();
         kitchenObject.SetKitchenObjectParent(parent);
         return kitchenObject;
+    }
+
+    public bool TryGetPlate(out PlateKitchenObject plateKitchenObject)
+    {
+        if (this is PlateKitchenObject)
+        {
+            plateKitchenObject = this as PlateKitchenObject;
+            return true;
+        }
+
+        plateKitchenObject = null;
+        return false;
     }
 }

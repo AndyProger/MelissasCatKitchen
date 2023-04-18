@@ -22,12 +22,23 @@ public class CuttingCounter : Counter, IHasProgress
             OnCounterInteractionEvent(InteractionType.Set);
             return;
         }
+
+        if (!HasKitchenObject()) 
+            return;
         
-        if (HasKitchenObject() && !player.HasKitchenObject())
+        if (player.HasKitchenObject())
         {
-            CurrentKitchenObject.SetKitchenObjectParent(player);
-            OnCounterInteractionEvent(InteractionType.Get);
+            if (player.CurrentKitchenObject.TryGetPlate(out var plateKitchenObject))
+            {
+                if (plateKitchenObject.TryAddIngredient(CurrentKitchenObject.KitchenObjectSO))
+                    CurrentKitchenObject.DestroySelf();
+            }
+                
+            return;
         }
+            
+        CurrentKitchenObject.SetKitchenObjectParent(player);
+        OnCounterInteractionEvent(InteractionType.Get);
     }
 
     public override void InteractAlternate(Player player)
