@@ -6,6 +6,9 @@ public class DeliveryCounter : Counter
             return;
         
         if (player.CurrentKitchenObject.TryGetPlate(out var plateKitchenObject))
+        {
+            DeliveryManager.Instance.DeliverRecipe(plateKitchenObject);
             player.CurrentKitchenObject.DestroySelf();
+        }
     }
 }

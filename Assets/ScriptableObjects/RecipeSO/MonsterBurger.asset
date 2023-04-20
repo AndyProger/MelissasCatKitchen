@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ad2e0ce1c02bd48a4b275b4ef6a3b8, type: 3}
+  m_Name: MonsterBurger
+  m_EditorClassIdentifier: 
+  KitchenObjectsSo:
+  - {fileID: 11400000, guid: 4ad475f30d38dcd4484936f6f0c6a16c, type: 2}
+  - {fileID: 11400000, guid: 7cc132458a8908246bc6ec70a4f88402, type: 2}
+  - {fileID: 11400000, guid: 4db72975774a12243846019aa4955234, type: 2}
+  - {fileID: 11400000, guid: cd79e837ecadeff47b1c0dd9999b0ca7, type: 2}
+  - {fileID: 11400000, guid: d45291dbeecfd6a4aaee83a219385b4f, type: 2}
+  RecipeName: MonsterBurger
