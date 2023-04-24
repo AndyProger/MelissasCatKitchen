@@ -12,8 +12,13 @@ public class DeliveryManager : MonoBehaviour
     [SerializeField] private RecipeListSO _recipeListSo;
     
     public static DeliveryManager Instance { get; private set; }
+
+    public event EventHandler OnRecipeSpawned;
+    public event EventHandler OnRecipeCompleted;
+    public event EventHandler OnRecipeSuccess;
+    public event EventHandler OnRecipeFail;
     
-    private List<RecipeSO> _waitingRecipesSo = new();
+    public List<RecipeSO> WaitingRecipesSo { get; } = new();
     private float _spawnRecipeTimer;
 
     private void Awake() => 
@@ -25,13 +30,13 @@ public class DeliveryManager : MonoBehaviour
         if (_spawnRecipeTimer <= 0f)
         {
             _spawnRecipeTimer = SpawnRecipeTimerMax;
-            if (WaitingRecipesMax == _waitingRecipesSo.Count)
+            if (WaitingRecipesMax == WaitingRecipesSo.Count)
                 return;
             
             // TODO: Extension method
             var waitingRecipeSO = _recipeListSo.RecipesSo[Random.Range(0, _recipeListSo.RecipesSo.Count)];
-            Debug.Log(waitingRecipeSO.RecipeName);
-            _waitingRecipesSo.Add(waitingRecipeSO);
+            WaitingRecipesSo.Add(waitingRecipeSO);
+            OnRecipeSpawned?.Invoke(this, EventArgs.Empty);
         }
     }
 
@@ -39,7 +44,7 @@ public class DeliveryManager : MonoBehaviour
     // TODO: Refactor this method
     public void DeliverRecipe(PlateKitchenObject plateKitchenObject)
     {
-        foreach (var waitingRecipeSo in _waitingRecipesSo)
+        foreach (var waitingRecipeSo in WaitingRecipesSo)
         {
             if (waitingRecipeSo.KitchenObjectsSo.Count != plateKitchenObject.KitchenObjects.Count)
                 continue;
@@ -63,12 +68,13 @@ public class DeliveryManager : MonoBehaviour
             
             if (plateContentMatch)
             {
-                Debug.Log("Match!");
-                _waitingRecipesSo.Remove(waitingRecipeSo);
+                WaitingRecipesSo.Remove(waitingRecipeSo);
+                OnRecipeCompleted?.Invoke(this, EventArgs.Empty);
+                OnRecipeSuccess?.Invoke(this, EventArgs.Empty);
                 return;
             }
         }
         
-        Debug.Log("Miss!");
+        OnRecipeFail?.Invoke(this, EventArgs.Empty);
     }
 }

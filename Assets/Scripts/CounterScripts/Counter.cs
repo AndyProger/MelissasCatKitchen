@@ -4,13 +4,27 @@ using UnityEngine;
 
 public abstract class Counter : MonoBehaviour, IKitchenObjectParent
 {
+    public static event EventHandler OnAnyObjectPlaced;
+    
     [SerializeField] protected KitchenObjectSO _kitchenObjectSO;
     [SerializeField] private Transform _counterTopPoint;
     
     public event EventHandler<CounterInteractionArgs> OnCounterInteraction;
     
     public Transform CounterTopPoint => _counterTopPoint;
-    public KitchenObject CurrentKitchenObject { get; set; }
+
+    public KitchenObject CurrentKitchenObject
+    {
+        get => _currentKitchenObject;
+        set
+        {
+            _currentKitchenObject = value;
+            if (_currentKitchenObject != null)
+                OnAnyObjectPlaced?.Invoke(this, EventArgs.Empty);
+        }
+    }
+
+    private KitchenObject _currentKitchenObject; 
 
     public virtual void Interact(Player player) { }
 

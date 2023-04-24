@@ -10,10 +10,21 @@ public class Player : MonoBehaviour, IKitchenObjectParent
     
     public static Player Instance { get; private set; }
     public Transform CounterTopPoint => _holdPoint;
-    public KitchenObject CurrentKitchenObject { get; set; }
+    public bool IsWalking => _currentDirection != Vector3.zero;
+
+    public KitchenObject CurrentKitchenObject
+    {
+        get => _currentKitchenObject;
+        set
+        {
+            _currentKitchenObject = value;
+            OnPickedSmth?.Invoke(this, EventArgs.Empty);
+        }
+    }
 
     public event EventHandler OnWalking;
     public event EventHandler OnStopWalking;
+    public event EventHandler OnPickedSmth;
     public event EventHandler<OnSelectedCounterEventArgs> OnSelectedCounterChanged;
 
     [SerializeField] private float _moveSpeed = 7f;
@@ -25,6 +36,7 @@ public class Player : MonoBehaviour, IKitchenObjectParent
     private Vector3 _currentDirection;
     private Vector3 _lastDirection;
     private Counter _selectedCounter;
+    private KitchenObject _currentKitchenObject;
 
     private void Awake()
     {
