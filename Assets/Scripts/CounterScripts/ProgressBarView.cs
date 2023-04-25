@@ -3,7 +3,7 @@ using GameEventArgs;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ProgressBarUI : BaseUI
+public class ProgressBarView : BaseView
 {
     [SerializeField] private GameObject _hasProgressGameObject;
     [SerializeField] private Image _barImage;

@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace CounterScripts
 {
-    public class BaseUI : MonoBehaviour
+    public class BaseView : MonoBehaviour
     {
         public void Show() => 
             gameObject.SetActive(true);
