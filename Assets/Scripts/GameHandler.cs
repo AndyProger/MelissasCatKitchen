@@ -18,6 +18,7 @@ public class GameHandler : MonoBehaviour
     public float CountdownToStartTimer { get; private set; } = 3f;
     public float GamePlayingTimer { get; private set; }
     public float NormalizedGamePlayTimeSeconds => 1 - GamePlayingTimer / GamePlayingTimeSecondsMax;
+    public event EventHandler OnGameTogglePause;
 
     public event EventHandler OnStateChanged;
     
@@ -27,6 +28,11 @@ public class GameHandler : MonoBehaviour
     {
         Instance = this;
         CurrentGameState = GameState.WaitingToStart;
+    }
+
+    private void Start()
+    {
+        GameInput.Instance.OnPauseAction += (_, _) => { TogglePauseGame(); };
     }
 
     private void Update()
@@ -71,4 +77,10 @@ public class GameHandler : MonoBehaviour
 
     public bool IsGamePlaying() => 
         CurrentGameState == GameState.GamePlaying;
+
+    public void TogglePauseGame()
+    {
+        Time.timeScale = Time.timeScale == 0f ? 1 : 0;
+        OnGameTogglePause?.Invoke(this, EventArgs.Empty);
+    }
 }

@@ -2,13 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9ffc71c-b4cb-415e-a65a-c5942d163731" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/View/Meta/Scene.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/View/Meta/Scene.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MelissasCatKitchen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MelissasCatKitchen/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerInputActions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputActions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerInputActions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputActions.inputactions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/BaseUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/BaseView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/BaseUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/BaseView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/ProgressBarUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/ProgressBarView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/ProgressBarUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/ProgressBarView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/Counter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/Counter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/CuttingCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/CuttingCounter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/TrashCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/TrashCounter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/GameInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/GameInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/MovingShader.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/MovingShader.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +39,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/2ca7bdfed5874f329433256f548490641a000/e0/921572ed/RaycastHit.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/4014a86cbefb4944b2b6c9211c8fd2fc159a00/14/3397f977/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/4014a86cbefb4944b2b6c9211c8fd2fc159a00/fd/6c19ab87/Scene.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/820418806247485ca814d3202155407f10fc00/ff/265f3b55/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PlayerInputActions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioClipSO.cs" root0="FORCE_HIGHLIGHTING" />
@@ -57,11 +67,17 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/RecipeListSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/RecipeSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlateCompleteVisual.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sounds/PlayerSounds.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ResetStaticDataManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sounds/PlayerSounds.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sounds/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sounds/StoveCounterSound.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/ClockView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/DeliveryManagerSingleView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/DeliveryManagerView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/Meta/Loader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/Meta/LoaderCallback.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/PasueView/OptionsButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/PasueView/ToGameButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.10/Runtime/External/LibTessDotNet/Dict.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.10/Runtime/External/LibTessDotNet/Tess.cs" root0="SKIP_HIGHLIGHTING" />
@@ -147,6 +163,7 @@
       <workItem from="1682352391405" duration="6899000" />
       <workItem from="1682453297146" duration="450000" />
       <workItem from="1682453808312" duration="3592000" />
+      <workItem from="1683043453645" duration="9481000" />
     </task>
     <task id="LOCAL-00002" summary="added some post processing">
       <created>1679423535818</created>
@@ -292,6 +309,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/View/PasueView/OptionsButton.cs</url>
+          <line>12</line>
+          <properties documentPath="D:\diplom\DiplomProject\MelissasCatKitchen\Assets\Scripts\View\PasueView\OptionsButton.cs" initialLine="12" containingFunctionPresentation="lambda expression inside method 'Awake'">
+            <startOffsets>
+              <option value="283" />
+            </startOffsets>
+            <endOffsets>
+              <option value="303" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -12,7 +12,12 @@ public class CuttingCounter : Counter, IHasProgress
     private int _cuttingProgress;
 
     public event EventHandler<ProgressEventArgs> OnProgress;
-    
+
+    public static void ResetCuttingCounterEvents()
+    {
+        OnAnyCut = null;
+    }
+
     public override void Interact(Player player)
     {
         if (!HasKitchenObject() 

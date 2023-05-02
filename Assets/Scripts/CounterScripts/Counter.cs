@@ -25,6 +25,11 @@ public abstract class Counter : MonoBehaviour, IKitchenObjectParent
     }
 
     private KitchenObject _currentKitchenObject; 
+    
+    public static void ResetEvents()
+    {
+        OnAnyObjectPlaced = null;
+    }
 
     public virtual void Interact(Player player) { }
 

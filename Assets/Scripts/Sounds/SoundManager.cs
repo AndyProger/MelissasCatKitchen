@@ -3,13 +3,18 @@ using Random = UnityEngine.Random;
 
 public class SoundManager : MonoBehaviour
 {
+     public const string PlayerSoundEffectSavedValue = "PlayerSoundEffectSavedValue";
+     
      public static SoundManager Instance { get; private set; }
      
      [SerializeField] private AudioClipSO _audioClipsSo;
 
+     private float _volume = 1f;
+
      private void Awake()
      {
           Instance = this;
+          _volume = PlayerPrefs.GetFloat(PlayerSoundEffectSavedValue, 1f);
      }
 
      private void Start()
@@ -33,13 +38,20 @@ public class SoundManager : MonoBehaviour
                PlayRandomSound(_audioClipsSo.Trash, ((TrashCounter)sender).transform.position);
      }
 
-     private static void PlayRandomSound(AudioClip[] audioClips, Vector3 position, float volume = 1f)
+     private void PlayRandomSound(AudioClip[] audioClips, Vector3 position, float volumeMultiplier = 1f)
      {
-          AudioSource.PlayClipAtPoint(audioClips[Random.Range(0, audioClips.Length)], position, volume);
+          AudioSource.PlayClipAtPoint(audioClips[Random.Range(0, audioClips.Length)], position, _volume * volumeMultiplier);
      }
 
-     public void PlayFootstepsSound(Vector3 position, float volume)
+     public void PlayFootstepsSound(Vector3 position, float volumeMultiplier)
      {
-          PlayRandomSound(_audioClipsSo.FootStep, position);
+          PlayRandomSound(_audioClipsSo.FootStep, position, _volume * volumeMultiplier);
+     }
+
+     public void ChangeVolume(float value)
+     {
+          _volume = value;
+          PlayerPrefs.SetFloat(PlayerSoundEffectSavedValue, _volume);
+          PlayerPrefs.Save();
      }
 }
