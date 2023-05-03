@@ -4,7 +4,17 @@ using UnityEngine;
 
 public class GameStartCountdownView : BaseView
 {
+    private static readonly int Popup = Animator.StringToHash("NumberPopup");
+    
     [SerializeField] private TextMeshProUGUI _countdownText;
+
+    private Animator _animator;
+    private int _previousCountDownNumber;
+
+    private void Awake()
+    {
+        _animator = GetComponent<Animator>();
+    }
 
     private void Start()
     {
@@ -21,6 +31,13 @@ public class GameStartCountdownView : BaseView
 
     private void Update()
     {
-        _countdownText.text = Mathf.Ceil(GameHandler.Instance.CountdownToStartTimer).ToString();
+        var countDownNumber = Mathf.CeilToInt(GameHandler.Instance.CountdownToStartTimer);
+        _countdownText.text = countDownNumber.ToString();
+        if (_previousCountDownNumber != countDownNumber)
+        {
+            _previousCountDownNumber = countDownNumber;
+            _animator.SetTrigger(Popup);
+            SoundManager.Instance.PlayCountdownSound();
+        }
     }
 }

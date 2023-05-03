@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using GameEventArgs;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class StoveCounter : Counter, IHasProgress
 {
@@ -19,7 +20,7 @@ public class StoveCounter : Counter, IHasProgress
     public event EventHandler<StoveCounterStateChangedEventArgs> OnStoveCounterStateChanged;
     public event EventHandler<ProgressEventArgs> OnProgress;
 
-    private State _state;
+    public State CurrentState { get; private set; }
     private float _fryingTimer;
     private float _overcookingTimer;
     private FryingRecipeSO _fryingRecipeSo;
@@ -27,7 +28,7 @@ public class StoveCounter : Counter, IHasProgress
 
     private void Start()
     {
-        _state = State.Idle;
+        CurrentState = State.Idle;
     }
 
     private void Update()
@@ -35,7 +36,7 @@ public class StoveCounter : Counter, IHasProgress
         if (!HasKitchenObject()) 
             return;
         
-        switch (_state)
+        switch (CurrentState)
         {
             case State.Idle:
                 break;
@@ -47,11 +48,11 @@ public class StoveCounter : Counter, IHasProgress
                 {
                     CurrentKitchenObject.DestroySelf();
                     KitchenObject.SpawnKitchenObject(_fryingRecipeSo.After, this);
-                    _state = State.Cooked;
+                    CurrentState = State.Cooked;
                     _overcookingTimer = 0.0f;
                     _overcookingRecipeSo = GetOvercookingRecipeSo();
                     
-                    OnStoveCounterStateChanged?.Invoke(this, new StoveCounterStateChangedEventArgs(_state));
+                    OnStoveCounterStateChanged?.Invoke(this, new StoveCounterStateChangedEventArgs(CurrentState));
                     OnProgress?.Invoke(this, new ProgressEventArgs((int) _fryingRecipeSo.fryingTimeMax, (int) _fryingRecipeSo.fryingTimeMax));
                 }
                 break;
@@ -63,8 +64,8 @@ public class StoveCounter : Counter, IHasProgress
                 {
                     CurrentKitchenObject.DestroySelf();
                     KitchenObject.SpawnKitchenObject(_overcookingRecipeSo.After, this);
-                    _state = State.Overcooked;
-                    OnStoveCounterStateChanged?.Invoke(this, new StoveCounterStateChangedEventArgs(_state));
+                    CurrentState = State.Overcooked;
+                    OnStoveCounterStateChanged?.Invoke(this, new StoveCounterStateChangedEventArgs(CurrentState));
                     OnProgress?.Invoke(this, new ProgressEventArgs(_overcookingRecipeSo.overcookingTimeMax, _overcookingRecipeSo.overcookingTimeMax));
                 }
                 break;
@@ -83,8 +84,8 @@ public class StoveCounter : Counter, IHasProgress
         {
             player.CurrentKitchenObject.SetKitchenObjectParent(this);
             _fryingRecipeSo = GetFryingRecipeSo();
-            _state = State.Cooking;
-            OnStoveCounterStateChanged?.Invoke(this, new StoveCounterStateChangedEventArgs(_state));
+            CurrentState = State.Cooking;
+            OnStoveCounterStateChanged?.Invoke(this, new StoveCounterStateChangedEventArgs(CurrentState));
             _fryingTimer = 0.0f;
             return;
         }
@@ -112,8 +113,8 @@ public class StoveCounter : Counter, IHasProgress
 
     private void ResetState()
     {
-        _state = State.Idle;
-        OnStoveCounterStateChanged?.Invoke(this, new StoveCounterStateChangedEventArgs(_state));
+        CurrentState = State.Idle;
+        OnStoveCounterStateChanged?.Invoke(this, new StoveCounterStateChangedEventArgs(CurrentState));
         OnProgress?.Invoke(this, new ProgressEventArgs(0, 0));
     }
     

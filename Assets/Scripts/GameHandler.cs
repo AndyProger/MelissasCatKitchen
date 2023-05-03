@@ -11,7 +11,7 @@ public class GameHandler : MonoBehaviour
         GameOver,
     }
     
-    private const float GamePlayingTimeSecondsMax = 20f;
+    private const float GamePlayingTimeSecondsMax = 120f;
     
     public static GameHandler Instance { get; private set; }
     public GameState CurrentGameState { get; private set; }

@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Before: {fileID: 11400000, guid: cd79e837ecadeff47b1c0dd9999b0ca7, type: 2}
   After: {fileID: 11400000, guid: ec330c49a34781945ae5bee548b086dd, type: 2}
-  overcookingTimeMax: 5
+  overcookingTimeMax: 7

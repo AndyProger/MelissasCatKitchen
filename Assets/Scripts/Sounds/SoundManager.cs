@@ -47,6 +47,16 @@ public class SoundManager : MonoBehaviour
      {
           PlayRandomSound(_audioClipsSo.FootStep, position, _volume * volumeMultiplier);
      }
+     
+     public void PlayCountdownSound()
+     {
+          PlayRandomSound(_audioClipsSo.Warning, Vector3.zero);
+     }
+     
+     public void PlayWarningSound(Vector3 position)
+     {
+          PlayRandomSound(_audioClipsSo.Warning, position);
+     }
 
      public void ChangeVolume(float value)
      {
