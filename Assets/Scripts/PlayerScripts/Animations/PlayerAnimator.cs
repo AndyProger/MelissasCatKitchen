@@ -2,11 +2,10 @@ using UnityEngine;
 
 public class PlayerAnimator : MonoBehaviour
 {
-    private static readonly int IsWalking = Animator.StringToHash("IsWalking");
+    private static readonly int Running = Animator.StringToHash("Running");
+    private static readonly int Idle = Animator.StringToHash("Idle");
 
     [SerializeField] private Animator _animator;
-
-    private bool _isWalking;
 
     private void Start()
     {
@@ -16,10 +15,7 @@ public class PlayerAnimator : MonoBehaviour
 
     private void SetWalkingMode(bool isWalking)
     {
-        if (_isWalking == isWalking) 
-            return;
-        
-        _isWalking = isWalking;
-        _animator.SetBool(IsWalking, isWalking);
+        _animator.SetTrigger(isWalking ? Running : Idle);
+        _animator.ResetTrigger(!isWalking ? Running : Idle);
     }
 }

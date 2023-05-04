@@ -3,35 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="d9ffc71c-b4cb-415e-a65a-c5942d163731" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MelissasCatKitchen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MelissasCatKitchen/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Counters/DeliveryCounter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/DeliveryCounter.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Counters/StoveCounter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/StoveCounter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Idle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PlayerAnimator.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Wlak.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Wlak.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/FryingRecipeSO/CookedMeatToOvercookedMeat.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/FryingRecipeSO/CookedMeatToOvercookedMeat.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/FryingRecipeSO/RawMeatToCookedMeat.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/FryingRecipeSO/RawMeatToCookedMeat.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/StoveCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/StoveCounter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sounds/StoveCounterSound.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sounds/StoveCounterSound.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/GameStartCountdownView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/GameStartCountdownView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Animations.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Animations/ContainerCounter.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Animations/ContainerCounter.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Animations/ContainerCounterClosed.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Animations/ContainerCounterClosed.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Animations/ContainerCounterOpenClose.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Animations/ContainerCounterOpenClose.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Animations/CuttingCounter.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Animations/CuttingCounter.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Animations/CuttingCounterCut.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Animations/CuttingCounterCut.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Animations/CuttingCounterIdle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Animations/CuttingCounterIdle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Animations/Idle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Animations/Idle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Animations/PlayerAnimator.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Animations/PlayerAnimator.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Animations/Wlak.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Animations/Wlak.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Animations/PlayerAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Animations/PlayerAnimator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,10 +120,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="37276">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="37276" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -179,7 +161,8 @@
       <workItem from="1682453297146" duration="450000" />
       <workItem from="1682453808312" duration="3592000" />
       <workItem from="1683043453645" duration="9521000" />
-      <workItem from="1683129531346" duration="5910000" />
+      <workItem from="1683129531346" duration="7228000" />
+      <workItem from="1683214074749" duration="3969000" />
     </task>
     <task id="LOCAL-00002" summary="added some post processing">
       <created>1679423535818</created>
@@ -279,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683055229967</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="some details, first level, some game design">
+      <created>1683140320002</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1683140320002</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +306,8 @@
     <MESSAGE value="basic delivery manager" />
     <MESSAGE value="deliver manager, sound manager" />
     <MESSAGE value="a lot of ui" />
-    <option name="LAST_COMMIT_MESSAGE" value="a lot of ui" />
+    <MESSAGE value="some details, first level, some game design" />
+    <option name="LAST_COMMIT_MESSAGE" value="some details, first level, some game design" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

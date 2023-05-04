@@ -32,6 +32,7 @@ public class Player : MonoBehaviour, IKitchenObjectParent
     [SerializeField] private GameInput _gameInput;
     [SerializeField] private LayerMask _countersLayerMask;
     [SerializeField] private Transform _holdPoint;
+    [SerializeField] private Transform _catTransform;
 
     private Vector3 _currentDirection;
     private Vector3 _lastDirection;
