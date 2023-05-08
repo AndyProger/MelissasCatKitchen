@@ -1,15 +1,18 @@
 using UnityEngine;
 
-public class LoaderCallback : MonoBehaviour
+namespace View.Meta
 {
-    private bool _isFirstUpdate = true;
-
-    private void Update()
+    public class LoaderCallback : MonoBehaviour
     {
-        if (!_isFirstUpdate) 
-            return;
+        private bool _isFirstUpdate = true;
+
+        private void Update()
+        {
+            if (!_isFirstUpdate) 
+                return;
         
-        _isFirstUpdate = false;
-        Loader.LoaderCallback();
+            _isFirstUpdate = false;
+            Loader.LoaderCallback();
+        }
     }
 }

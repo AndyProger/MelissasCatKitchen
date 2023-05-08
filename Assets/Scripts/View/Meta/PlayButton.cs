@@ -1,11 +1,8 @@
-using UnityEngine;
-using UnityEngine.UI;
-using Scene = View.Meta.Scene;
-
-public class PlayButton : MonoBehaviour
+namespace View.Meta 
 {
-    [SerializeField] private Button _playButton;
-
-    private void Start() => 
-        _playButton.onClick.AddListener(() => Loader.Load(Scene.GameScene));
+    public class PlayButton : ButtonBase
+    {
+        protected override void OnClick() => 
+            Loader.Load(ViewModel.ViewModel.PlayButtonContext.GetSceneToLoad());
+    }
 }

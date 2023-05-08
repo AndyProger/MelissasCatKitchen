@@ -1,33 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9ffc71c-b4cb-415e-a65a-c5942d163731" name="Changes" comment="file system refactoring, get rid of obsolete files">
+    <list default="true" id="d9ffc71c-b4cb-415e-a65a-c5942d163731" name="Changes" comment="menu improvements">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/GameLevelsInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/GameLevelsInfo.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Model.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Model.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/View/Meta/ButtonBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/View/Meta/ButtonBase.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ViewModel.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ViewModel/Game.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ViewModel/Game/Pause.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ViewModel/Game/Pause/MainMenuButtonContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ViewModel/Game/Pause/MainMenuButtonContext.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ViewModel/Meta.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ViewModel/Meta/PlayButtonContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ViewModel/Meta/PlayButtonContext.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ViewModel/Meta/QuitButtonContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ViewModel/Meta/QuitButtonContext.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ViewModel/ViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ViewModel/ViewModel.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MelissasCatKitchen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MelissasCatKitchen/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/AnimationPackages.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/AnimationPackages/Cat.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/AnimationPackages/Cat.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/AnimationPackages/CatIdlePack.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/AnimationPackages/CatIdlePack.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/AnimationPackages/CatRunningPack.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/AnimationPackages/CatRunningPack.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/AnimationPackages/CatTPosePack.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/AnimationPackages/CatTPosePack.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/HoldAndRun.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/HoldAndRun.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Idle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Idle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/IdleAndHold.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/IdleAndHold.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/PlayeAimationController.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/PlayeAimationController.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Running.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Running.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/T-pose.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/T-pose.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Wall.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Wall.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MetaScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MetaScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/Meta/Loader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/Meta/Loader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/Meta/LoaderCallback.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/Meta/LoaderCallback.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/Meta/MetaMenuView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/Meta/MetaMenuView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/Meta/PlayButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/Meta/PlayButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/Meta/QuitButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/Meta/QuitButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/PasueView/MainMenuButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/PasueView/MainMenuButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/PasueView/OptionsButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/PasueView/OptionsButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/PasueView/ToGameButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/PasueView/ToGameButton.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -336,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683564525376</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="menu improvements">
+      <created>1683567746911</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1683567746911</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,7 +391,8 @@
     <MESSAGE value="remove obsolete player animations" />
     <MESSAGE value="file system refactoring" />
     <MESSAGE value="file system refactoring, get rid of obsolete files" />
-    <option name="LAST_COMMIT_MESSAGE" value="file system refactoring, get rid of obsolete files" />
+    <MESSAGE value="menu improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="menu improvements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -398,19 +409,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/View/PasueView/OptionsButton.cs</url>
-          <line>12</line>
-          <properties documentPath="D:\diplom\DiplomProject\MelissasCatKitchen\Assets\Scripts\View\PasueView\OptionsButton.cs" initialLine="12" containingFunctionPresentation="lambda expression inside method 'Awake'">
-            <startOffsets>
-              <option value="283" />
-            </startOffsets>
-            <endOffsets>
-              <option value="303" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,17 +1,9 @@
 using UnityEngine;
-using UnityEngine.Serialization;
-using UnityEngine.UI;
+using View.Meta;
 
-public class BackOptions : MonoBehaviour
+public class BackOptions : ButtonBase
 {
-    [SerializeField] private Button _button;
-    [FormerlySerializedAs("_optinonsView")] [SerializeField] private OptionsView optionsView;
+    [SerializeField] private OptionsView optionsView;
 
-    private void Awake()
-    {
-        _button.onClick.AddListener(() =>
-        {
-            optionsView.Hide();
-        });
-    }
+    protected override void OnClick() => optionsView.Hide();
 }

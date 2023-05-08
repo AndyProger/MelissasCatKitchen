@@ -1,17 +1,10 @@
-using UnityEngine;
-using UnityEngine.UI;
 using View.Meta;
 
-public class MainMenuButton : MonoBehaviour
+public class MainMenuButton : ButtonBase
 {
-    [SerializeField] private Button _toMainMenuButton;
-
-    private void Start()
+    protected override void OnClick()
     {
-        _toMainMenuButton.onClick.AddListener(() =>
-        {
-            GameHandler.Instance.TogglePauseGame();
-            Loader.Load(Scene.MetaScene);
-        });
+        GameHandler.Instance.TogglePauseGame();
+        Loader.Load(ViewModel.ViewModel.MainMenuButtonContext.GetSceneToLoad());
     }
 }

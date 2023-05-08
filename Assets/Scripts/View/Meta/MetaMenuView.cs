@@ -1,18 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class MetaMenuView : MonoBehaviour
+namespace View.Meta
 {
-    // Start is called before the first frame update
-    void Start()
+    public class MetaMenuView : MonoBehaviour
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+    
     }
 }

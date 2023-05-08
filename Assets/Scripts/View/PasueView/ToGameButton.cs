@@ -1,17 +1,13 @@
 using UnityEngine;
-using UnityEngine.UI;
+using View.Meta;
 
-public class ToGameButton : MonoBehaviour
+public class ToGameButton : ButtonBase
 {
-    [SerializeField] private Button _toGameButton;
     [SerializeField] private GameObject _pauseMenu;
 
-    private void Start()
+    protected override void OnClick()
     {
-        _toGameButton.onClick.AddListener(() =>
-        {
-            _pauseMenu.SetActive(false);
-            GameHandler.Instance.TogglePauseGame();
-        });
+        _pauseMenu.SetActive(false);
+        GameHandler.Instance.TogglePauseGame();
     }
 }

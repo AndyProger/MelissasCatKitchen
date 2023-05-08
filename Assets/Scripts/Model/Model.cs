@@ -1,0 +1,10 @@
+using View.Meta;
+
+namespace Model
+{
+    public static class Model
+    {
+        public static GameLevelsInfo LevelInfo = new(); // if add new levels deserilize to save progress
+        public static Scene MainMenuScene => Scene.MetaScene;
+    }
+}

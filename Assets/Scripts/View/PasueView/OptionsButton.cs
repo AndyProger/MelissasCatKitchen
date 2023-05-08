@@ -1,16 +1,9 @@
 using UnityEngine;
-using UnityEngine.UI;
+using View.Meta;
 
-public class OptionsButton : MonoBehaviour
+public class OptionsButton : ButtonBase
 {
-    [SerializeField] private Button _button;
     [SerializeField] private OptionsView _optionsView;
 
-    private void Awake()
-    {
-        _button.onClick.AddListener(() =>
-        {
-            _optionsView.Show();
-        });
-    }
+    protected override void OnClick() => _optionsView.Show();
 }

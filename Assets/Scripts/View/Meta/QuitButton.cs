@@ -1,10 +1,7 @@
-using UnityEngine;
-using UnityEngine.UI;
-
-public class QuitButton : MonoBehaviour
+namespace View.Meta
 {
-    [SerializeField] private Button _quitButton;
-
-    private void Start() => 
-        _quitButton.onClick.AddListener(Application.Quit);
+    public class QuitButton : ButtonBase
+    {
+        protected override void OnClick() => ViewModel.ViewModel.QuitButtonContext.Quit();
+    }
 }
