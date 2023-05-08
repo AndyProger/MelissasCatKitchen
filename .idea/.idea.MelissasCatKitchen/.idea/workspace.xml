@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9ffc71c-b4cb-415e-a65a-c5942d163731" name="Changes" comment="MVVM integration">
+    <list default="true" id="d9ffc71c-b4cb-415e-a65a-c5942d163731" name="Changes" comment="burst compiler integration">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ViewModel/IContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ViewModel/IContext.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MelissasCatKitchen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MelissasCatKitchen/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/DeliveryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/DeliveryManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/DeliveryManagerView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/DeliveryManagerView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/GameHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/GameHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Model/Model.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Model.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/GameOverView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/GameOverView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/PasueView/MainMenuButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/PasueView/MainMenuButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ViewModel/Binder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ViewModel/Binder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ViewModel/ViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ViewModel/ViewModel.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +28,7 @@
     <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/2ca7bdfed5874f329433256f548490641a000/e0/921572ed/RaycastHit.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/4014a86cbefb4944b2b6c9211c8fd2fc159a00/14/3397f977/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/4014a86cbefb4944b2b6c9211c8fd2fc159a00/fd/6c19ab87/Scene.cs" root0="SKIP_HIGHLIGHTING" />
@@ -97,6 +102,14 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../FirstBuild\MelissasCatKitchen.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="D:\diplom\FirstBuild" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\Unity\Unity 2021.3.18f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\diplom\DiplomProject\MelissasCatKitchen -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
@@ -158,7 +171,7 @@
       <workItem from="1683043453645" duration="9521000" />
       <workItem from="1683129531346" duration="7228000" />
       <workItem from="1683214074749" duration="8360000" />
-      <workItem from="1683574304086" duration="4648000" />
+      <workItem from="1683574304086" duration="6227000" />
     </task>
     <task id="LOCAL-00002" summary="added some post processing">
       <created>1679423535818</created>
@@ -335,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683577116646</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="burst compiler integration">
+      <created>1683579023014</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1683579023014</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,7 +377,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="added some post processing" />
     <MESSAGE value="added new input system, movement, and simple animation" />
     <MESSAGE value="some refactoring and selection effect added" />
     <MESSAGE value="added empty and container counter logic and some animation logic for them" />
@@ -382,7 +401,8 @@
     <MESSAGE value="menu improvements" />
     <MESSAGE value="MVVM refactoring" />
     <MESSAGE value="MVVM integration" />
-    <option name="LAST_COMMIT_MESSAGE" value="MVVM integration" />
+    <MESSAGE value="burst compiler integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="burst compiler integration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -394,17 +414,17 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/View/GameOverView.cs</url>
-          <line>14</line>
-          <properties documentPath="D:\diplom\DiplomProject\MelissasCatKitchen\Assets\Scripts\View\GameOverView.cs" initialLine="14" containingFunctionPresentation="method 'Start'">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/ViewModel/ViewModel.cs</url>
+          <line>27</line>
+          <properties documentPath="D:\diplom\DiplomProject\MelissasCatKitchen\Assets\Scripts\ViewModel\ViewModel.cs" initialLine="27" containingFunctionPresentation="method 'Reset'">
             <startOffsets>
-              <option value="321" />
+              <option value="812" />
             </startOffsets>
             <endOffsets>
-              <option value="322" />
+              <option value="813" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

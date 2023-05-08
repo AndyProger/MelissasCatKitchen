@@ -6,6 +6,7 @@ public class MainMenuButton : ButtonBase
     protected override void OnClick()
     {
         GameHandler.Instance.TogglePauseGame();
+        ViewModel.ViewModel.Reset();
         Loader.Load(ViewModel.ViewModel.MainMenuButtonContext.GetSceneToLoad());
     }
 }

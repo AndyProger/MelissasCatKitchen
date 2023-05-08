@@ -9,15 +9,14 @@ public class GameOverView : BaseView
     [SerializeField] private TextMeshProUGUI _recipesDeliveredText;
 
     private int _deliveredRecipes;
-    private Binder _deliveredRecipesBinder;
     
     private void Start()
     {
-        _deliveredRecipesBinder = new Binder(
+        ViewModel.ViewModel.Binders.Add(new Binder(
             ViewModel.ViewModel.DeliveryManagerContext,
             "DeliveredRecipes",
             _recipesDeliveredText,
-            "text");
+            "text"));
         
         ViewModel.ViewModel.GameHandlerContext.OnStateChanged += (_, _) =>
         {

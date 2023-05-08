@@ -14,5 +14,11 @@ namespace Model
             GameStateInfo = new();
             DeliveryRecipesInfo = new();
         }
+
+        public static void Reset()
+        {
+            GameStateInfo = new();
+            DeliveryRecipesInfo = new();
+        }
     }
 }
