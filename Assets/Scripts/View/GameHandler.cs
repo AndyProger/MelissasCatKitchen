@@ -1,4 +1,5 @@
 using System;
+using Unity.Burst;
 using UnityEngine;
 
 namespace View
@@ -16,6 +17,7 @@ namespace View
             GameInput.Instance.OnPauseAction += (_, _) => { TogglePauseGame(); };
         }
 
+        [BurstCompile]
         private void Update()
         {
             ViewModel.ViewModel.GameHandlerContext.UpdateCurrentGameState(Time.deltaTime);

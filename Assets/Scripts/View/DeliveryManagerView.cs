@@ -1,3 +1,4 @@
+using Unity.Burst;
 using UnityEngine;
 
 public class DeliveryManagerView : MonoBehaviour
@@ -17,6 +18,7 @@ public class DeliveryManagerView : MonoBehaviour
         UpdateView();
     }
 
+    [BurstCompile]
     private void UpdateView()
     {
         foreach (Transform child in _container)

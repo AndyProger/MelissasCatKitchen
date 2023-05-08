@@ -1,119 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9ffc71c-b4cb-415e-a65a-c5942d163731" name="Changes" comment="MVVM refactoring">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/DeliveryRecipesInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/DeliveryRecipesInfo.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/GameStateInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/GameStateInfo.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/ScriptableObjects.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ViewModel/Binder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ViewModel/Binder.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ViewModel/Game/DeliveryManagerContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ViewModel/Game/DeliveryManagerContext.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ViewModel/Game/GameHandlerContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ViewModel/Game/GameHandlerContext.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ViewModel/Game/GameState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ViewModel/Game/GameState.cs.meta" afterDir="false" />
+    <list default="true" id="d9ffc71c-b4cb-415e-a65a-c5942d163731" name="Changes" comment="MVVM integration">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MelissasCatKitchen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MelissasCatKitchen/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioClipSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/AudioClipSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioClipSO.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/AudioClipSO.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/Animations.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/Animations.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/Animations/ContainerCounterAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/Animations/ContainerCounterAnimation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/Animations/ContainerCounterAnimation.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/Animations/ContainerCounterAnimation.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/Animations/CuttingCounterAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/Animations/CuttingCounterAnimation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/Animations/CuttingCounterAnimation.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/Animations/CuttingCounterAnimation.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/Animations/StoveCounterAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/Animations/StoveCounterAnimation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/Animations/StoveCounterAnimation.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/Animations/StoveCounterAnimation.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/BaseView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/BaseView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/BaseView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/BaseView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/ClearCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/ClearCounter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/ClearCounter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/ClearCounter.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/ContainerCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/ContainerCounter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/ContainerCounter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/ContainerCounter.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/Counter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/Counter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/Counter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/Counter.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/CuttingCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/CuttingCounter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/CuttingCounter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/CuttingCounter.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/DeliveryCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/DeliveryCounter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/DeliveryCounter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/DeliveryCounter.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/DeliveryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/DeliveryManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/DeliveryManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/DeliveryManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/IHasProgress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/IHasProgress.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/IHasProgress.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/IHasProgress.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/PlateCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/PlateCounter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/PlateCounter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/PlateCounter.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/PlatesCounterVisual.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/PlatesCounterVisual.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/PlatesCounterVisual.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/PlatesCounterVisual.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/ProgressBarView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/ProgressBarView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/ProgressBarView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/ProgressBarView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/SelectedCounterVisual.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/SelectedCounterVisual.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/SelectedCounterVisual.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/SelectedCounterVisual.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/StoveCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/StoveCounter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/StoveCounter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/StoveCounter.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/StoveWarningView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/StoveWarningView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/StoveWarningView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/StoveWarningView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/TrashCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/TrashCounter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CounterScripts/TrashCounter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/TrashCounter.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameEventArgs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/GameEventArgs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameEventArgs/CounterInteractionArgs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/GameEventArgs/CounterInteractionArgs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameEventArgs/CounterInteractionArgs.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/GameEventArgs/CounterInteractionArgs.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameEventArgs/OnIngredientAddedEventArgs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/GameEventArgs/OnIngredientAddedEventArgs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameEventArgs/OnIngredientAddedEventArgs.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/GameEventArgs/OnIngredientAddedEventArgs.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameEventArgs/OnSelectedCounterEventArgs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/GameEventArgs/OnSelectedCounterEventArgs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameEventArgs/OnSelectedCounterEventArgs.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/GameEventArgs/OnSelectedCounterEventArgs.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameEventArgs/ProgressEventArgs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/GameEventArgs/ProgressEventArgs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameEventArgs/ProgressEventArgs.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/GameEventArgs/ProgressEventArgs.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameEventArgs/StoveCounterStateChangedEventArgs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/GameEventArgs/StoveCounterStateChangedEventArgs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameEventArgs/StoveCounterStateChangedEventArgs.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/GameEventArgs/StoveCounterStateChangedEventArgs.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/GameHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/GameHandler.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/KitchenObjectsScripts.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/CuttingRecipeSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/ScriptableObjects/CuttingRecipeSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/CuttingRecipeSO.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/ScriptableObjects/CuttingRecipeSO.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/FryingRecipeSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/ScriptableObjects/FryingRecipeSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/FryingRecipeSO.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/ScriptableObjects/FryingRecipeSO.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/IKitchenObjectParent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/KitchenObjectsScripts/IKitchenObjectParent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/IKitchenObjectParent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/KitchenObjectsScripts/IKitchenObjectParent.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/KitchenObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/KitchenObjectsScripts/KitchenObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/KitchenObject.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/KitchenObjectsScripts/KitchenObject.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/KitchenObjectSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/ScriptableObjects/KitchenObjectSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/KitchenObjectSO.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/ScriptableObjects/KitchenObjectSO.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/OvercookingRecipeSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/ScriptableObjects/OvercookingRecipeSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/OvercookingRecipeSO.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/ScriptableObjects/OvercookingRecipeSO.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/PlateKitchenObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/KitchenObjectsScripts/PlateKitchenObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/PlateKitchenObject.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/KitchenObjectsScripts/PlateKitchenObject.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/RecipeListSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/ScriptableObjects/RecipeListSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/RecipeListSO.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/ScriptableObjects/RecipeListSO.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/RecipeSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/ScriptableObjects/RecipeSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObjectsScripts/RecipeSO.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/ScriptableObjects/RecipeSO.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LookAtCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/LookAtCamera.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LookAtCamera.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/LookAtCamera.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Model/Model.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Model.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlateCompleteVisual.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/PlateCompleteVisual.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlateCompleteVisual.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/PlateCompleteVisual.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/PlayerScripts.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Animations.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/PlayerScripts/Animations.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Animations/PlayerAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/PlayerScripts/Animations/PlayerAnimator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Animations/PlayerAnimator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/PlayerScripts/Animations/PlayerAnimator.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/GameInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/PlayerScripts/GameInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/GameInput.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/PlayerScripts/GameInput.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/PlayerScripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Player.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/PlayerScripts/Player.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ResetStaticDataManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/ResetStaticDataManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ResetStaticDataManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/ResetStaticDataManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sounds/SoundManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/ClockView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/ClockView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/DeliveryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/DeliveryManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/DeliveryManagerView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/DeliveryManagerView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/DeliveryResultView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/DeliveryResultView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/GameOverView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/GameOverView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/GameStartCountdownView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/GameStartCountdownView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/PasueView/GamePasueView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/PasueView/GamePasueView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/PasueView/MainMenuButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/PasueView/MainMenuButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/PasueView/ToGameButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/PasueView/ToGameButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ViewModel/ViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ViewModel/ViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/View/GameHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/View/GameHandler.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,6 +47,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/Counter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/CuttingCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/DeliveryCounter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/diplom/DiplomProject/MelissasCatKitchen/Assets/Scripts/View/CounterScripts/DeliveryManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/DeliveryManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/IHasProgress.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/PlateCounter.cs" root0="FORCE_HIGHLIGHTING" />
@@ -164,9 +57,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/StoveWarningView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/CounterScripts/TrashCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/DeliveryManagerSingleView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/diplom/DiplomProject/MelissasCatKitchen/Assets/Scripts/View/DeliveryManagerView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/DeliveryManagerView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/DeliveryResultView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/GameHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/diplom/DiplomProject/MelissasCatKitchen/Assets/Scripts/View/GameHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/KitchenObjectsScripts/KitchenObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/KitchenObjectsScripts/PlateKitchenObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/Meta/Loader.cs" root0="FORCE_HIGHLIGHTING" />
@@ -263,7 +158,7 @@
       <workItem from="1683043453645" duration="9521000" />
       <workItem from="1683129531346" duration="7228000" />
       <workItem from="1683214074749" duration="8360000" />
-      <workItem from="1683574304086" duration="2738000" />
+      <workItem from="1683574304086" duration="4648000" />
     </task>
     <task id="LOCAL-00002" summary="added some post processing">
       <created>1679423535818</created>
@@ -433,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683570530011</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="MVVM integration">
+      <created>1683577116645</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1683577116646</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,7 +357,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="remove garbage" />
     <MESSAGE value="added some post processing" />
     <MESSAGE value="added new input system, movement, and simple animation" />
     <MESSAGE value="some refactoring and selection effect added" />
@@ -480,7 +381,8 @@
     <MESSAGE value="file system refactoring, get rid of obsolete files" />
     <MESSAGE value="menu improvements" />
     <MESSAGE value="MVVM refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="MVVM refactoring" />
+    <MESSAGE value="MVVM integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="MVVM integration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
