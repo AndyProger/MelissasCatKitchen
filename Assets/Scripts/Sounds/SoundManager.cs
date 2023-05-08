@@ -19,10 +19,10 @@ public class SoundManager : MonoBehaviour
 
      private void Start()
      {
-          DeliveryManager.Instance.OnRecipeSuccess += (_,_) => 
+          ViewModel.ViewModel.DeliveryManagerContext.OnRecipeSuccess += (_,_) => 
                PlayRandomSound(_audioClipsSo.DeliverySuccess, DeliveryCounter.Instance.transform.position);
           
-          DeliveryManager.Instance.OnRecipeFail += (_,_) => 
+          ViewModel.ViewModel.DeliveryManagerContext.OnRecipeFail += (_,_) => 
                PlayRandomSound(_audioClipsSo.DeliveryFail, DeliveryCounter.Instance.transform.position);
           
           CuttingCounter.OnAnyCut += (sender,_) => 

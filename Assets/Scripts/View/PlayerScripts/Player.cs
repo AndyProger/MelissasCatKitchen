@@ -55,7 +55,7 @@ public class Player : MonoBehaviour, IKitchenObjectParent
     
     private void OnInteractAction(object obj, EventArgs args)
     {
-        if (_selectedCounter == null || !GameHandler.Instance.IsGamePlaying()) 
+        if (_selectedCounter == null || !ViewModel.ViewModel.GameHandlerContext.IsGamePlaying()) 
             return;
         
         _selectedCounter.Interact(this);
@@ -63,7 +63,7 @@ public class Player : MonoBehaviour, IKitchenObjectParent
     
     private void OnInteractAlternateAction(object obj, EventArgs args)
     {
-        if (_selectedCounter == null || !GameHandler.Instance.IsGamePlaying()) 
+        if (_selectedCounter == null || !ViewModel.ViewModel.GameHandlerContext.IsGamePlaying()) 
             return;
         
         _selectedCounter.InteractAlternate(this);

@@ -621,7 +621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f3b7de8afeb48543bbd13c2f11f9fb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _toMainMenuButton: {fileID: 171903065}
+  _button: {fileID: 171903065}
 --- !u!114 &171903064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3376,7 +3376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d717dd935769894fb0c2e750bf0068a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _toGameButton: {fileID: 612807130}
+  _button: {fileID: 612807130}
   _pauseMenu: {fileID: 421254240}
 --- !u!114 &612807129
 MonoBehaviour:

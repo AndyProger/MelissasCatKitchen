@@ -1,6 +1,7 @@
 using CounterScripts;
 using TMPro;
 using UnityEngine;
+using ViewModel.Game.Pause;
 
 public class GameStartCountdownView : BaseView
 {
@@ -18,9 +19,9 @@ public class GameStartCountdownView : BaseView
 
     private void Start()
     {
-        GameHandler.Instance.OnStateChanged += (_, _) =>
+        ViewModel.ViewModel.GameHandlerContext.OnStateChanged += (_, _) =>
         {
-            if (GameHandler.Instance.CurrentGameState == GameHandler.GameState.CountdownToStart)
+            if (ViewModel.ViewModel.GameHandlerContext.CurrentGameState == GameState.CountdownToStart)
                 Show();
             else
                 Hide();
@@ -31,7 +32,7 @@ public class GameStartCountdownView : BaseView
 
     private void Update()
     {
-        var countDownNumber = Mathf.CeilToInt(GameHandler.Instance.CountdownToStartTimer);
+        var countDownNumber = Mathf.CeilToInt(ViewModel.ViewModel.GameHandlerContext.GetCountdownToStartTimer());
         _countdownText.text = countDownNumber.ToString();
         if (_previousCountDownNumber != countDownNumber)
         {

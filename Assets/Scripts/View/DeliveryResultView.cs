@@ -29,7 +29,7 @@ public class DeliveryResultView : BaseView
 
     private void Start()
     {
-        DeliveryManager.Instance.OnRecipeSuccess += (_, _) =>
+        ViewModel.ViewModel.DeliveryManagerContext.OnRecipeSuccess += (_, _) =>
         {
             _backgroundImage.color = _successColor;
             _iconImage.sprite = _successSprite;
@@ -39,7 +39,7 @@ public class DeliveryResultView : BaseView
             _animator.SetTrigger(Popup);
         };
         
-        DeliveryManager.Instance.OnRecipeFail += (_, _) =>
+        ViewModel.ViewModel.DeliveryManagerContext.OnRecipeFail += (_, _) =>
         {
             _backgroundImage.color = _failColor;
             _iconImage.sprite = _failSprite;

@@ -7,6 +7,6 @@ public class ClockView : MonoBehaviour
 
     private void Update()
     {
-        _clockImage.fillAmount = GameHandler.Instance.NormalizedGamePlayTimeSeconds;
+        _clockImage.fillAmount = ViewModel.ViewModel.GameHandlerContext.GetNormalizedGamePlayTimeSeconds();
     }
 }

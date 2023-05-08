@@ -16,7 +16,7 @@ public class DeliveryCounter : Counter
         
         if (player.CurrentKitchenObject.TryGetPlate(out var plateKitchenObject))
         {
-            DeliveryManager.Instance.DeliverRecipe(plateKitchenObject);
+            ViewModel.ViewModel.DeliveryManagerContext.DeliverRecipe(plateKitchenObject);
             player.CurrentKitchenObject.DestroySelf();
         }
     }

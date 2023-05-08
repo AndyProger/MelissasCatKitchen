@@ -12,8 +12,8 @@ public class DeliveryManagerView : MonoBehaviour
 
     private void Start()
     {
-        DeliveryManager.Instance.OnRecipeSpawned += (_, _) => UpdateView();
-        DeliveryManager.Instance.OnRecipeCompleted += (_, _) => UpdateView();
+        ViewModel.ViewModel.DeliveryManagerContext.OnRecipeSpawned += (_, _) => UpdateView();
+        ViewModel.ViewModel.DeliveryManagerContext.OnRecipeCompleted += (_, _) => UpdateView();
         UpdateView();
     }
 
@@ -27,7 +27,7 @@ public class DeliveryManagerView : MonoBehaviour
             Destroy(child.gameObject);
         }
 
-        foreach (var recipeSo in DeliveryManager.Instance.WaitingRecipesSo)
+        foreach (var recipeSo in ViewModel.ViewModel.DeliveryManagerContext.GetWaitingRecipesSo())
         {
             var recipeTransform = Instantiate(_recipeTemplate, _container);
             recipeTransform.gameObject.SetActive(true);

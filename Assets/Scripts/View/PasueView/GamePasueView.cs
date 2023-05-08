@@ -1,5 +1,6 @@
 using CounterScripts;
 using UnityEngine;
+using View;
 
 public class GamePasueView : BaseView
 {
