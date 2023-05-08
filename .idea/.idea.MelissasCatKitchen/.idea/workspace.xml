@@ -1,7 +1,480 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9ffc71c-b4cb-415e-a65a-c5942d163731" name="Changes" comment="remove obsolete player animations" />
+    <list default="true" id="d9ffc71c-b4cb-415e-a65a-c5942d163731" name="Changes" comment="file system refactoring">
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Black.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Black.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/CounterSelected.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/CounterSelected.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/PlayerMovingParticles.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/PlayerMovingParticles.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/StoveRedGlow.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/StoveRedGlow.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/StoveSizzlingParticles.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/StoveSizzlingParticles.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Trail.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Trail.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/All models.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/All models.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Bread bottom.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Bread bottom.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Bread top.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Bread top.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Burned meat patty.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Burned meat patty.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Cabbage slice_flat.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Cabbage slice_flat.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Cabbage slice_shaped.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Cabbage slice_shaped.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Cabbage.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Cabbage.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Cabbage.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Cabbage.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Cheese block.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Cheese block.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Cheese slice.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Cheese slice.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Chopping Board.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Chopping Board.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Cooked meat patty.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Cooked meat patty.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Counter_hole.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Counter_hole.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Counter_solid.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Counter_solid.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Double doors.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Double doors.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Frying Pan.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Frying Pan.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Kitchen Counter.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Kitchen Counter.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Kitchen Counter_Blue.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Kitchen Counter_Blue.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Knife.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Knife.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Plate.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Plate.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Single door.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Single door.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Stove Counter.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Stove Counter.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Bread_AlbedoTransparency.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Bread_AlbedoTransparency.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Bread_MetallicSmoothness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Bread_MetallicSmoothness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Bread_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Bread_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Cheese_AlbedoTransparency.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Cheese_AlbedoTransparency.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Cheese_MetallicSmoothness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Cheese_MetallicSmoothness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Cheese_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Cheese_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Chopping board_AlbedoTransparency.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Chopping board_AlbedoTransparency.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Chopping board_MetallicSmoothness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Chopping board_MetallicSmoothness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Chopping board_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Chopping board_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Frying pan_AlbedoTransparency.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Frying pan_AlbedoTransparency.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Frying pan_MetallicSmoothness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Frying pan_MetallicSmoothness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Frying pan_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Frying pan_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Kitchen Counter_AlbedoTransparency.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Kitchen Counter_AlbedoTransparency.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Kitchen Counter_Blue_AlbedoTransparency.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Kitchen Counter_Blue_AlbedoTransparency.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Kitchen Counter_MetallicSmoothness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Kitchen Counter_MetallicSmoothness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Kitchen Counter_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Kitchen Counter_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Knife_AlbedoTransparency.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Knife_AlbedoTransparency.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Knife_MetallicSmoothness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Knife_MetallicSmoothness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Knife_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Knife_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Lettuce_AlbedoTransparency.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Lettuce_AlbedoTransparency.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Lettuce_MetallicSmoothness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Lettuce_MetallicSmoothness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Lettuce_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Lettuce_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Meat_AlbedoTransparency.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Meat_AlbedoTransparency.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Meat_MetallicSmoothness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Meat_MetallicSmoothness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Meat_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Meat_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Plate_AlbedoTransparency.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Plate_AlbedoTransparency.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Plate_MetallicSmoothness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Plate_MetallicSmoothness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Plate_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Plate_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Stove_AlbedoTransparency.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Stove_AlbedoTransparency.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Stove_MetallicSmoothness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Stove_MetallicSmoothness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Stove_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Stove_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Tomato_AlbedoTransparency.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Tomato_AlbedoTransparency.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Tomato_MetallicSmoothness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Tomato_MetallicSmoothness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Tomato_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Tomato_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Trash bin_AlbedoTransparency.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Trash bin_AlbedoTransparency.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Trash bin_MetallicSmoothness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Trash bin_MetallicSmoothness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Trash bin_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Textures/Trash bin_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Tomato slice.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Tomato slice.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Tomato.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Tomato.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Trash bin.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Trash bin.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Uncooked meat patty.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Meshes/Uncooked meat patty.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Music.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Music/Music.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Music/Music.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_chop01.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_chop01.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_chop02.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_chop02.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_chop03.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_chop03.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_delivery_fail01.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_delivery_fail01.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_delivery_fail02.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_delivery_fail02.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_delivery_success01.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_delivery_success01.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_delivery_success02.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_delivery_success02.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_footstep01_01.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_footstep01_01.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_footstep01_02.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_footstep01_02.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_footstep02_01.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_footstep02_01.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_footstep02_02.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_footstep02_02.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_object_drop01.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_object_drop01.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_object_drop02.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_object_drop02.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_object_drop03.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_object_drop03.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_object_pickup01.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_object_pickup01.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_object_pickup02.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_object_pickup02.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_object_pickup03.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_object_pickup03.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_pan_sizzle_loop.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_pan_sizzle_loop.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_trash01.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_trash01.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_trash02.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_trash02.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_warning01.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_warning01.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_warning02.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/SFX/SFX_warning02.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Arrow.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/CircleDashed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/CircleDashed.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Cross.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Cross.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/GradientVertical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/GradientVertical.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Icons.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Icons/Bread.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Icons/Bread.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Icons/Cabbage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Icons/Cabbage.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Icons/CabbageSlices.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Icons/CabbageSlices.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Icons/CheeseBlock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Icons/CheeseBlock.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Icons/CheeseSlice.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Icons/CheeseSlice.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Icons/MeatPattyBurned.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Icons/MeatPattyBurned.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Icons/MeatPattyCooked.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Icons/MeatPattyCooked.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Icons/MeatPattyUncooked.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Icons/MeatPattyUncooked.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Icons/Plate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Icons/Plate.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Icons/Tomato.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Icons/Tomato.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Icons/TomatoSlice.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Icons/TomatoSlice.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Tick_Border.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Tick_Border.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Warning.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/White_1x1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/White_1x1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Materials/Black.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Materials/Black.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Materials/CounterSelected.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Materials/CounterSelected.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Materials/Floor.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Materials/Floor.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Materials/PlayerBody.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Materials/PlayerBody.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Materials/PlayerBody_Blue.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Materials/PlayerBody_Blue.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Materials/PlayerBody_Green.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Materials/PlayerBody_Green.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Materials/PlayerBody_Red.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Materials/PlayerBody_Red.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Materials/PlayerMovingParticles.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Materials/PlayerMovingParticles.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Materials/StoveRedGlow.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Materials/StoveRedGlow.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Materials/StoveSizzlingParticles.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Materials/StoveSizzlingParticles.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Materials/Trail.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Materials/Trail.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Materials/Wall.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Materials/Wall.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/All models.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/All models.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Bread bottom.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Bread bottom.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Bread top.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Bread top.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Burned meat patty.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Burned meat patty.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Cabbage slice_flat.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Cabbage slice_flat.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Cabbage slice_shaped.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Cabbage slice_shaped.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Cabbage.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Cabbage.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Cabbage.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Cabbage.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Cheese block.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Cheese block.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Cheese slice.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Cheese slice.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Chopping Board.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Chopping Board.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Cooked meat patty.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Cooked meat patty.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Counter_hole.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Counter_hole.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Counter_solid.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Counter_solid.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Double doors.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Double doors.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Frying Pan.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Frying Pan.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Kitchen Counter.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Kitchen Counter.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Kitchen Counter_Blue.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Kitchen Counter_Blue.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Knife.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Knife.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Plate.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Plate.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Single door.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Single door.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Stove Counter.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Stove Counter.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Bread_AlbedoTransparency.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Bread_AlbedoTransparency.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Bread_MetallicSmoothness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Bread_MetallicSmoothness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Bread_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Bread_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Cheese_AlbedoTransparency.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Cheese_AlbedoTransparency.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Cheese_MetallicSmoothness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Cheese_MetallicSmoothness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Cheese_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Cheese_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Chopping board_AlbedoTransparency.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Chopping board_AlbedoTransparency.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Chopping board_MetallicSmoothness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Chopping board_MetallicSmoothness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Chopping board_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Chopping board_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Frying pan_AlbedoTransparency.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Frying pan_AlbedoTransparency.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Frying pan_MetallicSmoothness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Frying pan_MetallicSmoothness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Frying pan_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Frying pan_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Kitchen Counter_AlbedoTransparency.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Kitchen Counter_AlbedoTransparency.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Kitchen Counter_Blue_AlbedoTransparency.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Kitchen Counter_Blue_AlbedoTransparency.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Kitchen Counter_MetallicSmoothness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Kitchen Counter_MetallicSmoothness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Kitchen Counter_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Kitchen Counter_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Knife_AlbedoTransparency.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Knife_AlbedoTransparency.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Knife_MetallicSmoothness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Knife_MetallicSmoothness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Knife_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Knife_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Lettuce_AlbedoTransparency.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Lettuce_AlbedoTransparency.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Lettuce_MetallicSmoothness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Lettuce_MetallicSmoothness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Lettuce_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Lettuce_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Meat_AlbedoTransparency.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Meat_AlbedoTransparency.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Meat_MetallicSmoothness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Meat_MetallicSmoothness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Meat_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Meat_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Plate_AlbedoTransparency.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Plate_AlbedoTransparency.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Plate_MetallicSmoothness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Plate_MetallicSmoothness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Plate_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Plate_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Stove_AlbedoTransparency.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Stove_AlbedoTransparency.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Stove_MetallicSmoothness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Stove_MetallicSmoothness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Stove_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Stove_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Tomato_AlbedoTransparency.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Tomato_AlbedoTransparency.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Tomato_MetallicSmoothness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Tomato_MetallicSmoothness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Tomato_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Tomato_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Trash bin_AlbedoTransparency.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Trash bin_AlbedoTransparency.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Trash bin_MetallicSmoothness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Trash bin_MetallicSmoothness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Trash bin_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Textures/Trash bin_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Tomato slice.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Tomato slice.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Tomato.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Tomato.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Trash bin.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Trash bin.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Uncooked meat patty.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Meshes/Uncooked meat patty.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/Music.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/Music/Music.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/Music/Music.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_chop01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_chop01.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_chop02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_chop02.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_chop03.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_chop03.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_delivery_fail01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_delivery_fail01.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_delivery_fail02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_delivery_fail02.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_delivery_success01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_delivery_success01.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_delivery_success02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_delivery_success02.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_footstep01_01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_footstep01_01.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_footstep01_02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_footstep01_02.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_footstep02_01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_footstep02_01.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_footstep02_02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_footstep02_02.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_object_drop01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_object_drop01.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_object_drop02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_object_drop02.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_object_drop03.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_object_drop03.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_object_pickup01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_object_pickup01.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_object_pickup02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_object_pickup02.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_object_pickup03.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_object_pickup03.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_pan_sizzle_loop.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_pan_sizzle_loop.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_trash01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_trash01.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_trash02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_trash02.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_warning01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_warning01.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_warning02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Sounds/SFX/SFX_warning02.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Arrow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/ButtonBackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/ButtonBackground.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/CircleDashed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/CircleDashed.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Cross.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Cross.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/GradientVertical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/GradientVertical.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Icons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Icons/Bread.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Icons/Bread.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Icons/Cabbage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Icons/Cabbage.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Icons/CabbageSlices.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Icons/CabbageSlices.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Icons/CheeseBlock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Icons/CheeseBlock.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Icons/CheeseSlice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Icons/CheeseSlice.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Icons/MeatPattyBurned.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Icons/MeatPattyBurned.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Icons/MeatPattyCooked.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Icons/MeatPattyCooked.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Icons/MeatPattyUncooked.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Icons/MeatPattyUncooked.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Icons/Plate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Icons/Plate.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Icons/Tomato.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Icons/Tomato.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Icons/TomatoSlice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Icons/TomatoSlice.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/KitchenChaosLogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/KitchenChaosLogo.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Tick_Border.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Tick_Border.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Tutorial.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Tutorial.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/Warning.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/White_1x1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Assets/Textures/White_1x1.png.meta" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -294,7 +767,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683562993508</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="file system refactoring">
+      <created>1683564267850</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1683564267850</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +817,8 @@
     <MESSAGE value="more animations" />
     <MESSAGE value="cat animation fix" />
     <MESSAGE value="remove obsolete player animations" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove obsolete player animations" />
+    <MESSAGE value="file system refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="file system refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
